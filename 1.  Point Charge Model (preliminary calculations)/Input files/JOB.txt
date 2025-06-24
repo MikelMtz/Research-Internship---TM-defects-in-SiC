@@ -1,0 +1,23 @@
+#!/bin/bash
+#SBATCH --time=15:00:00
+#SBATCH -N 1
+#SBATCH --mem-per-cpu=25000MB
+#SBATCH --ntasks-per-node=1
+#SBATCH -o vanadium_no_spin_orbit.inp.o%j
+
+module load intel
+
+
+export PATH=$PATH:/home4/s4752295/Internship/Molcas/bin
+export MOLCAS=/home4/s4752295/Internship/Molcas/recomp_try/OpenMolcas-master/build
+
+export Project=vanadium_so_cf
+export MOLCAS_MEM=4GB
+
+
+
+for R in 137.035999177
+do
+export R
+pymolcas input
+done

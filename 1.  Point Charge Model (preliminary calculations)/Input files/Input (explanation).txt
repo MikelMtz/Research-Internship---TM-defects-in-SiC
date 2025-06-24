@@ -1,0 +1,99 @@
+&SEWARD &END
+! SEWARD computes integrals needed for SCF and multiconfigurational methods
+
+AMFi
+! Use atomic mean-field integrals (AMFI) for scalar relativistic effects
+
+CLIG
+$R
+! Keyword for the speed of light corresponding to the cyrstal field, 
+! $R is a variable handled in the JOB.txt file when submitted.
+
+Basis Set
+V.ANO-rcc.Roos.21s15p10d6f4g2h.10s9p8d6f4g2h.
+! ANO-RCC basis set for Vanadium with contraction levels for valence/core
+
+Spherical d
+! Use spherical harmonics (saves computation time vs Cartesian)
+
+V            0.0	0.0	0.0
+! Position of the vanadium atom at the origin
+
+End of Basis
+
+Xfield
+! External field definition using point charges (model ligands)
+
+4
+0, 0, 1.89	-1.0
+1.636788013152589, 0, -0.945	-1.0
+-0.8183940065762945, 1.4175, -0.945	-1.0
+-0.8183940065762945, -1.4175, -0.945	-1.0
+! Four point charges simulating ligand field around Vanadium
+
+End of input
+
+&SCF &END
+! Self-consistent field (Hartree-Fock) calculation
+
+Occupied
+9
+! Number of occupied orbitals in the SCF wavefunction
+
+Iterations
+   50  100
+! Maximum number of macro and micro iterations
+
+End of Input
+
+&RASSCF &END
+! Restricted Active Space SCF - multiconfigurational calculation
+
+LumOrb
+! Save natural orbitals for later use (e.g., RASSI)
+
+Symmetry
+1
+! Use only the first irreducible representation (lowest symmetry)
+
+Spin
+2
+! Doublet spin state (S = 1/2)
+
+Nactel
+1 0 0
+! Active electrons: 1 electron, 0 alpha-beta imbalance
+
+CIRoot
+5 5 1
+! Calculate 5 roots (states), all equally weighted for state averaging
+
+inactive
+9
+! Number of inactive (core) orbitals
+
+ras2
+5
+! Number of orbitals in the RAS2 space (fully active)
+
+End of Input
+
+>> COPY vanadium_so_cf.JobIph $SLURM_SUBMIT_DIR/vanadium_so_cf.doublet.JobIph
+! Copy the JobIph file containing wavefunction info to a named version
+
+>> COPY $SLURM_SUBMIT_DIR/vanadium_so_cf.doublet.JobIph ./JOB002
+! Copy the named JobIph into the working directory as JOB002
+
+&RASSI &END
+! Perform RASSI (Restricted Active Space State Interaction) calculation
+
+NROFJobIph
+1 All
+! Use 1 JobIph file, include all calculated states
+
+SpinOrbit
+! Include spin-orbit coupling in the interaction matrix
+
+End of Input
+
+EOF

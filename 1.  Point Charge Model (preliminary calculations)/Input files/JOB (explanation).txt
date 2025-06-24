@@ -1,0 +1,37 @@
+#!/bin/bash
+#SBATCH --time=15:00:00
+#SBATCH -N 1
+#SBATCH --mem-per-cpu=25000MB
+#SBATCH --ntasks-per-node=1
+#SBATCH -o vanadium_no_spin_orbit.inp.o%j
+! SLURM job directives:
+! --time: maximum wall time allowed
+! -N 1: request 1 node
+! --mem-per-cpu: allocate 25 GB of memory per CPU
+! --ntasks-per-node: request 1 task (sequential run)
+! -o: output file pattern (%j inserts the job ID)
+
+module load intel
+! Load the Intel compiler environment (required for running Molcas if compiled with Intel)
+
+! Add your OpenMolcas binary directory to PATH
+export PATH=$PATH:/home4/s4752295/Internship/Molcas/bin
+
+! Set the MOLCAS environment variable to your OpenMolcas build directory
+export MOLCAS=/home4/s4752295/Internship/Molcas/recomp_try/OpenMolcas-master/build
+
+1 Set project name to use for temporary and output files
+export Project=vanadium_so_cf
+
+! Set memory available to Molcas (4 GB per process)
+export MOLCAS_MEM=4GB
+
+! Loop over values of speed of light (R), here only one value is used
+for R in 137.035999177
+do
+    export R
+    # Export R so it can be accessed in the input file (e.g., for CLIG)
+
+    pymolcas input
+    # Run the Molcas calculation using the input file named "input"
+done

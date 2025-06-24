@@ -1,0 +1,56 @@
+ &SEWARD &END
+AMFi
+
+CLIG
+$R
+
+Basis Set
+V.ANO-rcc.Roos.21s15p10d6f4g2h.10s9p8d6f4g2h.
+Spherical d
+V            0.0	0.0	0.0
+End of Basis
+
+Xfield
+
+4
+0, 0, 1.89	-1.0
+1.636788013152589, 0, -0.945	-1.0
+-0.8183940065762945, 1.4175, -0.945	-1.0
+-0.8183940065762945, -1.4175, -0.945	-1.0
+End of input
+
+
+  &SCF &END
+Occupied
+9
+Iterations
+   50  100
+End of Input
+
+ &RASSCF &END
+LumOrb
+Symmetry
+1
+Spin
+2
+Nactel
+1 0 0
+CIRoot
+5 5 1
+inactive
+9
+ras2
+5
+End of Input
+
+>> COPY vanadium_so_cf.JobIph $SLURM_SUBMIT_DIR/vanadium_so_cf.doublet.JobIph
+
+>> COPY $SLURM_SUBMIT_DIR/vanadium_so_cf.doublet.JobIph ./JOB002
+
+ &RASSI &END
+NROFJobIph
+1 All
+SpinOrbit
+End of Input
+
+EOF
