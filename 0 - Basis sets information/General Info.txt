@@ -1,0 +1,10 @@
+https://gitlab.com/Molcas/OpenMolcas/-/tree/master/basis_library  --> Link to library of basis sets
+	basistype.tbl --> list with properties of the basis sets: Hamiltonian, relativistic, contraction type, ...
+
+Among the non-relativistic basis sets there is one that with ANO (atomic natural number) contraction type but just up to Zink (and HAS all the electrons):
+	ANO-L --> https://gitlab.com/Molcas/OpenMolcas/-/blob/master/basis_library/ANO-L
+
+There are some basis sets with W, Re and Ta basis sets with non-rel Hamiltonian, but with segmented contraction and with NOT all electrons!!
+	DEF2-SVP   --> https://gitlab.com/Molcas/OpenMolcas/-/blob/master/basis_library/DEF2-SVP
+	DEF2-TZVP  --> https://gitlab.com/Molcas/OpenMolcas/-/blob/master/basis_library/DEF2-TZVP
+	DEF2-TZVPP --> https://gitlab.com/Molcas/OpenMolcas/-/blob/master/basis_library/DEF2-TZVPP

@@ -1,0 +1,70 @@
+https://www.molcas.org/basis/basis.tbl
+
+TUNGSTEN
+W.ANO-rcc.Roos.24s21p15d11f4g2h.11s10p9d8f4g2h.
+
+W.ANO-RCC-MB                             W.ANO-RCC...6s5p3d1f.
+W.ANO-RCC-VDZ                            W.ANO-RCC...7s6p4d2f.
+W.ANO-RCC-VDZP                           W.ANO-RCC...7s6p4d2f1g.
+W.ANO-RCC-VTZP                           W.ANO-RCC...8s7p5d3f2g1h.
+W.ANO-RCC-VQZP                           W.ANO-RCC...9s8p6d4f3g2h.
+
+
+TANTALUM
+Ta.ANO-rcc.Roos.24s21p15d11f4g2h.11s10p9d8f4g2h.
+
+Ta.ANO-RCC-MB                            Ta.ANO-RCC...6s5p3d1f.
+Ta.ANO-RCC-VDZ                           Ta.ANO-RCC...7s6p4d2f.
+Ta.ANO-RCC-VDZP                          Ta.ANO-RCC...7s6p4d2f1g.
+Ta.ANO-RCC-VTZP                          Ta.ANO-RCC...8s7p5d3f2g1h.
+Ta.ANO-RCC-VQZP                          Ta.ANO-RCC...9s8p6d4f3g2h.
+
+
+RHENIUM
+Re.ano-rcc.Roos.24s21p15d11f4g2h.11s10p9d8f4g2h.
+
+Re.ANO-RCC-MB                            Re.ANO-RCC...6s5p3d1f.
+Re.ANO-RCC-VDZ                           Re.ANO-RCC...7s6p4d2f.
+Re.ANO-RCC-VDZP                          Re.ANO-RCC...7s6p4d2f1g.
+Re.ANO-RCC-VTZP                          Re.ANO-RCC...8s7p5d3f2g1h.
+Re.ANO-RCC-VQZP                          Re.ANO-RCC...9s8p6d4f3g2h.
+
+
+MOLYBDENUM
+Mo.ANO-rcc.Roos.21s18p13d6f4g2h.10s9p9d6f4g2h.
+
+Mo.ANO-RCC-MB                            Mo.ANO-RCC...5s4p2d.
+Mo.ANO-RCC-VDZ                           Mo.ANO-RCC...6s5p3d.
+Mo.ANO-RCC-VDZP                          Mo.ANO-RCC...6s5p3d1f.
+Mo.ANO-RCC-VTZP                          Mo.ANO-RCC...7s6p4d2f1g.
+Mo.ANO-RCC-VQZP                          Mo.ANO-RCC...8s7p5d3f2g1h.
+
+
+NIOBIUM
+Nb.ANO-rcc.Roos.21s18p13d6f4g2h.10s9p8d5f4g2h.
+
+Nb.ANO-RCC-MB                            Nb.ANO-RCC...5s4p2d.
+Nb.ANO-RCC-VDZ                           Nb.ANO-RCC...6s5p3d.
+Nb.ANO-RCC-VDZP                          Nb.ANO-RCC...6s5p3d1f.
+Nb.ANO-RCC-VTZP                          Nb.ANO-RCC...7s6p4d2f1g.
+Nb.ANO-RCC-VQZP                          Nb.ANO-RCC...8s7p5d3f2g1h.
+
+
+CHROMIUM
+Cr.ANO-rcc.Roos.21s15p10d6f4g2h.10s10p8d6f4g2h.
+
+Cr.ANO-RCC-MB                            Cr.ANO-RCC...4s3p1d.
+Cr.ANO-RCC-VDZ                           Cr.ANO-RCC...5s4p2d.
+Cr.ANO-RCC-VDZP                          Cr.ANO-RCC...5s4p2d1f.
+Cr.ANO-RCC-VTZP                          Cr.ANO-RCC...6s5p3d2f1g.
+Cr.ANO-RCC-VQZP                          Cr.ANO-RCC...7s6p4d3f2g1h.
+
+
+VANADIUM
+V.ANO-rcc.Roos.21s15p10d6f4g2h.10s9p8d6f4g2h.
+
+V.ANO-RCC-MB                             V.ANO-RCC...4s3p1d.
+V.ANO-RCC-VDZ                            V.ANO-RCC...5s4p2d.
+V.ANO-RCC-VDZP                           V.ANO-RCC...5s4p2d1f.
+V.ANO-RCC-VTZP                           V.ANO-RCC...6s5p3d2f1g.
+V.ANO-RCC-VQZP                           V.ANO-RCC...7s6p4d3f2g1h.

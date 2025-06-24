@@ -1,0 +1,45 @@
+OCCUPIED ORBITALS AND ITERATIONS:
+
+&SCF
+Occupied
+34
+Iterations
+   50  100
+End of Input
+______________________________
+1 ELECTRON SHELL:
+
+
+&RASSCF
+LumOrb
+Symmetry
+1
+Spin
+4
+Nactel
+3 0 0
+CIRoot
+10 10 1
+inactive
+34
+ras2
+5
+End of Input
+______________________________
+3 ELECTRON SHELL:
+
+&RASSCF
+LumOrb
+Symmetry
+1
+Spin
+2
+Nactel
+3 0 0
+CIRoot
+40 40 1
+inactive
+34
+ras2
+5
+End of Input
