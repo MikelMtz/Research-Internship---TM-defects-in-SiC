@@ -34,3 +34,9 @@ look at systems with only 1 electron in the d-orbital, so we should focus on the
     Ta      with     natural charge
     W       with     total charge = 1
     Re      with     total charge = 2
+
+###############
+# INPUT FILES #
+###############
+
+The input files are taken 
